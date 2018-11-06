@@ -8,5 +8,5 @@ Example usage:
 
 And a tab in your browser will open with the following plot:
 
-![When developers want to do something fun outside and they end up writing a script about it instead.](../master/snippets/plot_ellipse.png)
+![When developers want to do something fun outside and they end up writing a script about it instead.](../../master/snippets/plot_ellipse.png)
 
