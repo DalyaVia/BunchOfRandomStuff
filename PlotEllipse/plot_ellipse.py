@@ -5,7 +5,7 @@ from haversine import haversine
 from optparse import OptionParser
 from math import sqrt, pow, atan2, degrees, pi
 from shapely import affinity
-from shapely.geometry import Point, LineString
+from shapely.geometry import LineString
 
 R_EARTH = 6371000
 
@@ -47,9 +47,9 @@ def Main():
 
 def GetEllipseAxisLengths(p1_lat, p1_lng, p2_lat, p2_lng, radius_in_meters):
     d = haversine((p1_lat, p1_lng), (p2_lat, p2_lng)) * 1000.0
-    a = radius_in_meters / 2.0
-    if a < d / 2.0:
+    if radius_in_meters < d:
         raise ValueError("Please specify radius larger than the distance between the two input points.")
+    a = radius_in_meters / 2.0
     b = sqrt(pow(a, 2) - pow(d / 2.0, 2))
     return a, b
 
