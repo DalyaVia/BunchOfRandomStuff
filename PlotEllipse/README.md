@@ -1,6 +1,10 @@
 # PlotEllipse
 Plot an ellipse in s2map around two GPS locations.
 
+For more information you can read 
+[this blog post](https://medium.freecodecamp.org/a-total-ellipse-on-the-map-9e30d5235078)
+on Free Code Camp.
+
 Example usage: 
 
 > python plot_ellipse.py --p1_lat 32.076761 --p1_lng 34.792510 --p2_lat 32.083257 --p2_lng 34.767737 -r 3000
